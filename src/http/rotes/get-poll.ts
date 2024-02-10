@@ -46,8 +46,6 @@ export async function getPoll(app: FastifyInstance) {
       poll: {
         id: poll.id,
         title: poll.title,
-        createdAt: poll.createdAt,
-        updatedAt: poll.updatedAt,
         options: poll.options.map(option => {
           return {
             id: option.id,
